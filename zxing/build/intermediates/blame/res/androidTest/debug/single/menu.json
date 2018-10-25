@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\history.xml",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\capture.xml",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\history.xml",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\encode.xml",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\capture.xml",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\history.xml",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\encode.xml",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\encode.xml",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\capture.xml",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\encode.xml",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\encode.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\capture.xml",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\history.xml",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\menu\\history.xml"
+    }
+]

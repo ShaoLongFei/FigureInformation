@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+    }
+]

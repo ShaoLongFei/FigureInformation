@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<include-->
+            <!--layout="@layout/title_bar"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/mainColor">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="查询结果"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/netpicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/netpicture"
+                android:text="书名："
+                android:id="@+id/name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkblue"
+                android:id="@+id/tv_name"
+                android:layout_toRightOf="@id/name"
+                android:layout_below="@id/netpicture"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/name"
+                android:text="副书名："
+                android:id="@+id/subtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkblue"
+                android:id="@+id/tv_subtitle"
+                android:layout_toRightOf="@id/name"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/author"
+                android:layout_below="@+id/subtitle"
+                android:text="作者："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_author"
+                android:layout_below="@id/tv_subtitle"
+                android:layout_toRightOf="@+id/author"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/summary"
+                android:layout_below="@+id/author"
+                android:text="摘要："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_summary"
+                android:layout_below="@id/tv_author"
+                android:layout_toRightOf="@+id/summary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/publisher"
+                android:layout_below="@+id/summary"
+                android:text="出版社："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_publisher"
+                android:layout_below="@id/tv_summary"
+                android:layout_toRightOf="@+id/publisher"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/pubplace"
+                android:layout_below="@+id/publisher"
+                android:text="出版地："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_pubplace"
+                android:layout_below="@id/tv_publisher"
+                android:layout_toRightOf="@+id/pubplace"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/pubdate"
+                android:layout_below="@+id/pubplace"
+                android:text="出版时间："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_pubdate"
+                android:layout_below="@id/tv_pubplace"
+                android:layout_toRightOf="@+id/pubdate"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/page"
+                android:layout_below="@+id/pubdate"
+                android:text="页数："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_page"
+                android:layout_below="@id/tv_pubdate"
+                android:layout_toRightOf="@+id/page"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/price"
+                android:layout_below="@+id/page"
+                android:text="价格："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_price"
+                android:layout_below="@id/tv_page"
+                android:layout_toRightOf="@+id/price"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/binding"
+                android:layout_below="@+id/price"
+                android:text="装帧方式："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_binding"
+                android:layout_below="@id/tv_price"
+                android:layout_toRightOf="@+id/binding"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/isbn"
+                android:layout_below="@+id/binding"
+                android:text="ISBN："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_isbn"
+                android:layout_below="@id/tv_binding"
+                android:layout_toRightOf="@+id/isbn"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/isbn10"
+                android:layout_below="@+id/isbn"
+                android:text="ISBN10位："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_isbn10"
+                android:layout_below="@id/tv_isbn"
+                android:layout_toRightOf="@+id/isbn10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/edition"
+                android:layout_below="@+id/isbn10"
+                android:text="版次："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_edition"
+                android:layout_below="@id/tv_isbn10"
+                android:layout_toRightOf="@+id/edition"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/impression"
+                android:layout_below="@+id/edition"
+                android:text="印次："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_impression"
+                android:layout_below="@id/tv_edition"
+                android:layout_toRightOf="@+id/impression"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/search_result_si"
+                android:id="@+id/language"
+                android:layout_below="@+id/impression"
+                android:text="正文语种："/>
+
+            <TextView
+                style="@style/search_result"
+                android:id="@+id/tv_language"
+                android:layout_below="@id/tv_impression"
+                android:layout_toRightOf="@+id/language"
+                />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_language"/>
+
+
+    </LinearLayout>
+</ScrollView>

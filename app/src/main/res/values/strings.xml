@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">图情资讯</string>
+    <string name="drawer_btn_rss">频道管理</string>
+    <string name="subscribe_my_category">我的频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
+    <string name="action_settings">Settings</string>
+    <string name="left_drawer_no_login_tip">登录后，将推荐给你更多感兴趣的文章</string>
+    <string name="left_drawer_item_search">搜索</string>
+    <string name="left_drawer_item_favorite">收藏</string>
+    <string name="left_drawer_item_message">消息</string>
+    <string name="left_drawer_item_offline">离线</string>
+    <string name="left_drawer_item_offline_cancel">取消离线</string>
+    <string name="left_drawer_item_activity">活动</string>
+    <string name="left_drawer_item_setting">设置</string>
+    <string name="left_drawer_item_feedback">反馈</string>
+    <string name="left_drawer_item_appstore">精彩应用</string>
+    <string name="drawer_right_logout_hint_text">"登录后 可关注好友评论和收藏"</string>
+    <string name="drawer_right_tip_no_login">未登录</string>
+    <string name="ss_pattern_update">发现%1$d条更新</string>
+    <string name="ss_have_a_rest">暂无更新, 休息一会儿</string>
+    <string name="action_night_mode">夜间模式</string>
+    <string name="action_day_mode">日间模式</string>
+    <string name="setting_list_mode">列表显示摘要</string>
+    <string name="setting_font_size">字体大小</string>
+    <string name="setting_list_comment">列表页评论</string>
+    <string name="setting_refresh_list">列表页刷新</string>
+    <string name="setting_load_image">2G/3G网络流量</string>
+    <string name="setting_notify">推送通知</string>
+    <string name="setting_interactive">互动插件</string>
+    <string name="setting_share_when_favor">收藏时转发</string>
+    <string name="setting_share_when_diggbury">顶踩时转发</string>
+    <string name="setting_clear">清理缓存</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_recommend">精彩应用推荐</string>
+    <string name="setting_update">检查新版本</string>
+    <string name="setting_night_mode">夜间模式</string>
+    <string name="setting_use_swipe">左右翻页</string>
+    <string name="setting_switch_domain">启动网络调试</string>
+    <string name="setting_close_shake_hand">关闭摇一摇切换夜间模式</string>
+    <string name="setting_use_help">使用帮助</string>
+    <string name="app_copyright">© 头条网 toutiao.com</string>
+    <string name="favorite_btn_delete">删除</string>
+    <string name="favorite_btn_edit">编辑</string>
+    <string name="favorite_btn_cancel">取消</string>
+    <string name="dislike_dlg_lable_speech">读文章</string>
+    <string name="label_cancel_dislike">撤消</string>
+    <string name="day_today">今天</string>
+    <string name="day_yesterday">昨天</string>
+    <string name="day_before">前天</string>
+    <string name="search_count_fmt">发现%1$s篇文章</string>
+    <string name="pattern_update">发现%1$d条更新</string>
+    <string name="city_category_list_header">点击选择其他城市</string>
+    <string name="city_category_list_hint">选择城市，立即查看本地新闻</string>
+    <string name="city_category_list_notify_no_city">请先选择您关注的城市</string>
+    <string name="retry_large_image"><u>加载失败，点击重试</u></string>
+    <string name="about">  随着3D打印技术的不断发展，其在各行各业的应用范围也在逐渐扩大。而关于该技术未来五年的发展前景，各家3D打印企业也是众说纷纭。今天，小编有幸采访了Nano Dimension的联合创始人兼首席营销官Simon Fried，并且详细阐述了其对未来五年3D打印发展的看法。
+
+据了解，Nano Dimension凭借其创新的Dragonfly 2020 3D打印机，已经在台式机上引入了多层次和多材料打印电路板的快速原型设计。
+
+3D打印工业化将成为下一个十年的标志
+
+“在我看来，未来五年对于3D打印的发展将是至关重要的。当然，随着3D打印方案的成本越来越高，我们将看到消费者空间的增长。但更为有趣的趋势是行业3D打印的增长。”Simon Fried说道。
+
+行业采用添加剂制造的趋势正在显著增加，广泛的业务已经浸入3D打印领域。例如，GE已经收购了Arcam AB和SLM Solutions Group，以帮助其在3D制造领域获得竞争力；西门子、福特等企业正在专注于将3D解决方案带入其工厂。
+
+成立合同制造公司，如Flex和Jabil正在研究如何采用3D打印制作更快、更经济高效的原型设计的强大工具，而且还可以作为改进制造运作方式的工具。换句话说，他们可以自己打印部分制造过程吗？事实是，生产线的效率和灵活性前进将需要3D打印在最终产品中使用，或者作为制造端部或两者的机器的一部分。
+
+同样值得考虑的是3D打印如何适应更广泛的物流链。例如，SAP Ariba企业对商业市场可能会提供适合日常业务交易的3D打印件，公司可以从不是自己的3D打印机订购零件，并将其装入机器。
+
+3D打印也提供了仓储和运输等方面的简单性，在许多情况下，当公司可以打印自己的零件时，库存几乎可以不需要了。
+
+这些领域中的每一个（单独和组合）都表明3D打印市场在未来几年将会发展壮大。这是一个多管齐下的过程，它的渗透远远超出了几年前的原型阶段。
+
+未来真正的可能性
+
+在未来的十年中，工业3D打印将会满足更多的需求。在机械方面，这意味着3D打印将使用更广泛的材料或更高质量的材料。
+
+我们还期望在组合材料方面具有更大的灵活性，例如，在相同的打印品中创建由不同类型的金属制成的物体。或者在一个打印作业中打印金属和聚合物，或金属和陶瓷。例如，通过这种能力，公司可以开始在部件内部署附加功能，例如机械对象的电气功能。Nano Dimension就是这样，将聚合物和金属打印在一起，具有非常具体的功能目标。在这条道路上，这种能力将带来更强大、更智能和功能更强的最终产品。
+
+将许多步骤和材料打印到一个打印作业中可以显著增加复杂性，其远远超出传统制造工艺的范围。这使设计师和制造商拥有了全新的灵活性和创造力。当3D打印机用于解决设计和功能问题时，添加剂制造的贡献越大。
+
+我们也期待3D打印尺寸和速度有重大突破，进一步使行业在未来几年得到应用，特别是几家专注于更快打印流程的公司，这对3D打印作为真正的制造工具来说是至关重要的。
+
+我们还将看到3D打印和电子产品的更大趋同。作为今天添加剂制造的新一个子类别，这种融合目前并不侧重于广泛的工业应用，但打印速度的提高将有助于将这种融合转变为全面的生产。
+
+挑战
+
+与任何技术一样，3D打印面临挑战。材料是真正成功的关键，所以每个人心中的问题都包括材料能否真正做到这一点，以及他们是否随着时间的推移而持续下去？
+
+另一个挑战在于标准。虽然传统制造依赖于并受各种标准的约束，但3D打印与模制或计算机数字控制（CNC）制造或锻造零件非常不同。标准必须演变而且非常迅速推出，这将确保部件的质量以及标准化。
+
+未来几年的最终挑战是软件。3D打印是复杂的，随着速度的提高和材料的增多，颜色和设计特性都在扩大，设计软件必须适应。显然，从CAD文件到3D打印对象的飞跃并不顺利。事实上，设计师面临的挑战要远大于设计本身。虽然已经建立了用于评估项目的机械性能的测试和评估方法，但随着材料和几何复杂性的增加，目前的软件包并不总是易于测试。
+
+综上所述，未来几年3D打印的发展将是令人兴奋的。并且通过更快的打印速度、多种材料和电子电路的集成，3D打印行业的可能性几乎是无限的</string>
+</resources>

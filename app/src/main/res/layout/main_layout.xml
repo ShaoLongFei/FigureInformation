@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <view.MyScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="@style/progressbar_style"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:indeterminateOnly="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在刷新。。。"
+                    android:textColor="#515151"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_load"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="@style/progressbar_style"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:indeterminateOnly="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在奋力加载。。。"
+                    android:textColor="#515151" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </view.MyScrollView>
+
+</LinearLayout>

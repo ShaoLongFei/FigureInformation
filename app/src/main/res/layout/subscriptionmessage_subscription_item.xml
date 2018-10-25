@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_collection"
+        >
+        <ImageView
+            android:id="@+id/pictureMessage_collectionMessage_iv"
+            android:src="@drawable/collection_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:lines="1"
+                android:ellipsize="middle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_bright"
+                android:text="这是图情资讯资讯栏里面的内容。"
+                android:id="@+id/nameMessage_collectionMessage_iv"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="被阅读次数："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="968 次"
+                    android:id="@+id/sumMessage_collection_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:id="@+id/deleteCollection_collectionMessage_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/important_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重要报告" />
+
+    <Button
+        android:id="@+id/intelligence_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="情报产品" />
+
+    <Button
+        android:id="@+id/compile_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编译报道" />
+
+    <Button
+        android:id="@+id/hot_topics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热点专题" />
+
+    <Button
+        android:id="@+id/renewable_energy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可再生能源" />
+
+    <Button
+        android:id="@+id/nanotechnology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="纳米科技" />
+
+    <Button
+        android:id="@+id/food_and_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="食物与营养" />
+
+    <Button
+        android:id="@+id/associated_gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="油气开发与应用" />
+
+    <Button
+        android:id="@+id/pollution_of_waters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水体污染治理" />
+
+    <Button
+        android:id="@+id/air_pollution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大气污染防治" />
+
+    <Button
+        android:id="@+id/integrated_circuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="集成电路装备" />
+
+    <Button
+        android:id="@+id/numerical_control_machine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数控机床" />
+
+    <Button
+        android:id="@+id/transgene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转基因生物新品种培育" />
+
+    <Button
+        android:id="@+id/agricultural_pollution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="农业立体污染防治" />
+
+    <Button
+        android:id="@+id/broadband"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宽带移动通信" />
+
+    <Button
+        android:id="@+id/new_drug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新药创制" />
+
+    <Button
+        android:id="@+id/infectious_diseases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重大传染病防治" />
+
+    <Button
+        android:id="@+id/search_isbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="根据ISBN码查询" />
+
+    <Button
+        android:id="@+id/recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个性推荐" />
+
+
+</LinearLayout>
+
+</ScrollView>

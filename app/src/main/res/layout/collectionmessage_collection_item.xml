@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_collection"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <!--<ImageView-->
+            <!--android:src="@drawable/collection_icon"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp" />-->
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/pictureMessage_collectionMessage_iv"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:lines="1"
+                android:ellipsize="middle"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/mainColor"
+                android:text="这是图情资讯收藏栏里面的内容。"
+                android:id="@+id/nameMessage_collectionMessage_iv"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="收藏时间："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="2017-09-11 16:27:58"
+                    android:id="@+id/timeMessage_collectionMessage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="被收藏次数："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="852 次"
+                    android:id="@+id/sumMessage_collection_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_marginRight="15dp"
+            android:id="@+id/deleteCollection_collectionMessage_cb"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\launcher_icon.png",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\launcher_icon.png",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\launcher_icon.png",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\launcher_icon.png"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\launcher_icon.png",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\launcher_icon.png"
+    }
+]

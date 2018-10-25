@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
+    }
+]

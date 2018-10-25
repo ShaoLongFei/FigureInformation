@@ -1,0 +1,281 @@
+package com.example.kys_31.figureinformation;
+
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.speech.tts.TextToSpeech;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+import com.android.volley.toolbox.Volley;
+import com.iflytek.cloud.InitListener;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechError;
+import com.iflytek.cloud.SpeechSynthesizer;
+import com.iflytek.cloud.SpeechUtility;
+import com.iflytek.cloud.SynthesizerListener;
+
+import java.util.Observable;
+
+import custom.ProgressDialogCustom;
+import data.WebDataMessage;
+import util.SharedUtil;
+import view.MyScrollView;
+
+public class CollectionInformationActivity extends BaseActivity implements View.OnClickListener, View.OnTouchListener {
+
+    //控件
+    private LinearLayout ll_view;
+    private TextView[] tv1;
+    private TextView tv_title;
+    private TextView tv_author;
+    private TextView tv_time;
+    private TextView tv_clickNumber;
+    private MyScrollView sv_view;
+    private LinearLayout ll_back;
+    private ImageView iv_share;
+    private ImageView mIvCollection;
+    private LinearLayout ll_load;
+    private LinearLayout ll_refresh;
+    private TextView si_author;
+    private TextView si_time;
+    private TextView si_clickNumber;
+    private ImageView iv_voice;
+    private NetworkImageView networkImageView;
+
+
+    private Handler handler;
+    private Handler viewHandler;
+    private int lineNumber;
+    private String author;
+    private String time;
+    private String clickNumber;
+    private String title;
+    private String content;
+    private  TextToSpeech tts;
+    private SpeechSynthesizer mySynthesizer;
+    private boolean playing=false;
+    private boolean played=false;
+    private String URL;
+    private String pictureURL;
+    private ProgressDialogCustom dialog;
+    private WebDataMessage mWebDataMessage;
+    private int mPosition;
+    private TextView tv_content;
+    private boolean isCollection=false;
+
+
+    @Override
+    protected int getLayoutID() {
+        return R.layout.main;
+    }
+    protected void initControl() {
+        mIvCollection = (ImageView)findViewById(R.id.collection_DetailMessage_iv);
+        tv_title=(TextView)findViewById(R.id.tv_title);
+        tv_title=(TextView)findViewById(R.id.tv_title);
+        tv_author=(TextView)findViewById(R.id.tv_author);
+        tv_time=(TextView)findViewById(R.id.tv_time);
+        tv_clickNumber=(TextView)findViewById(R.id.tv_clickNumber);
+        sv_view=(MyScrollView)findViewById(R.id.sv_view);
+        iv_share=(ImageView)findViewById(R.id.iv_share);
+        ll_load=(LinearLayout)findViewById(R.id.ll_load);
+        ll_back=(LinearLayout)findViewById(R.id.ll_back);
+        ll_refresh=(LinearLayout)findViewById(R.id.ll_refresh);
+        si_author=(TextView)findViewById(R.id.si_author);
+        si_time=(TextView)findViewById(R.id.si_time);
+        si_clickNumber=(TextView)findViewById(R.id.si_clickNumber);
+        iv_voice=(ImageView)findViewById(R.id.iv_voice);
+        networkImageView=(NetworkImageView)findViewById(R.id.network_img);
+        tv_content=(TextView)findViewById(R.id.tv_content);
+
+        initHandler();
+
+        pictureURL = getIntent().getStringExtra("pictureURL");
+        title = getIntent().getStringExtra("title");
+        content=getIntent().getStringExtra("content");
+        author=getIntent().getStringExtra("author");
+        time=getIntent().getStringExtra("time");
+        clickNumber=getIntent().getStringExtra("clickNumber");
+
+        mIvCollection.setImageResource(R.drawable.collection);
+        showTitle();
+    }
+
+    private void showPicture(){
+        RequestQueue mQueue = Volley.newRequestQueue(CollectionInformationActivity.this);
+        ImageLoader imageLoader = new ImageLoader(mQueue, new ImageLoader.ImageCache() {
+            @Override
+            public void putBitmap(String url, Bitmap bitmap) {
+
+            }
+
+            @Override
+            public Bitmap getBitmap(String url) {
+                return null;
+            }
+        });
+
+        networkImageView.setDefaultImageResId(R.drawable.picture_load);
+        networkImageView.setErrorImageResId(R.drawable.picture_error);
+        networkImageView.setImageUrl(pictureURL, imageLoader);
+    }
+
+    @Override
+    void setControlListener() {
+        iv_share.setOnClickListener(this);
+        sv_view.setOnTouchListener(this);
+        ll_back.setOnClickListener(this);
+        iv_voice.setOnClickListener(this);
+        mIvCollection.setOnClickListener(this);
+    }
+
+
+    private void initHandler() {
+        viewHandler=new Handler(){
+            public void handleMessage(Message msg){
+                super.handleMessage(msg);
+                switch (msg.what){
+                    case 1:
+                        ll_load.setVisibility(View.GONE);
+                        break;
+                    case 2:
+                        ll_refresh.setVisibility(View.GONE);
+                        break;
+                }
+            }
+        };
+    }
+
+    private void showTitle(){
+        showPicture();
+        tv_title.setText(title);
+        tv_author.setText(author);
+        tv_time.setText(time);
+        tv_clickNumber.setText(clickNumber);
+        si_author.setText("编译者：");
+        si_time.setText("编译时间：");
+        si_clickNumber.setText("点击量：");
+        tv_content.setText(content);
+    }
+
+    private void speakTextMethod(String str) {
+        SpeechUtility.createUtility(CollectionInformationActivity.this, "appid=5760ba33");
+        mySynthesizer = SpeechSynthesizer.createSynthesizer(this, myInitListener);
+        mySynthesizer.setParameter(SpeechConstant.VOICE_NAME,"xiaoyan");
+        mySynthesizer.setParameter(SpeechConstant.PITCH,"50");
+        mySynthesizer.setParameter(SpeechConstant.VOLUME,"50");
+        mySynthesizer.startSpeaking(str,mTtsListener);
+    }
+
+
+    private SynthesizerListener mTtsListener = new SynthesizerListener() {
+        @Override
+        public void onSpeakBegin() {
+        }
+        @Override
+        public void onSpeakPaused() {
+        }
+        @Override
+        public void onSpeakResumed() {
+        }
+        @Override
+        public void onBufferProgress(int percent, int beginPos, int endPos,
+                                     String info) {
+        }
+        @Override
+        public void onSpeakProgress(int percent, int beginPos, int endPos) {
+        }
+
+        @Override
+        public void onCompleted(SpeechError error) {
+
+        }
+        @Override
+        public void onEvent(int arg0, int arg1, int arg2, Bundle arg3) {
+
+        }
+    };
+
+
+    private InitListener myInitListener = new InitListener() {
+        @Override
+        public void onInit(int code) {}
+    };
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.ll_back:
+                finish();
+                break;
+            case R.id.iv_voice:
+                if (playing){
+                    iv_voice.setBackgroundResource(R.drawable.play);
+                    mySynthesizer.pauseSpeaking();
+                    playing=false;
+                }else {
+                    if (!played){
+                        speakTextMethod(content);
+                        played=true;
+                    }else {
+                        mySynthesizer.resumeSpeaking();
+                    }
+                    iv_voice.setBackgroundResource(R.drawable.pause);
+                    playing=true;
+                }
+                break;
+            case R.id.iv_share:
+                SharedUtil.showShare(CollectionInformationActivity.this, pictureURL, title, URL, content, R.drawable.logo);
+                break;
+        }
+    }
+
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+
+        switch (motionEvent.getAction()) {
+            case MotionEvent.ACTION_MOVE: {
+
+                if (sv_view.getScrollY() <= 0) {
+                    ll_refresh.setVisibility(View.VISIBLE);
+                    viewHandler.sendEmptyMessageDelayed(2,2000);
+                }
+
+                int measuredHeight = sv_view.getChildAt(0)
+                        .getMeasuredHeight();
+                int scrollY = sv_view.getScrollY();
+                int height = sv_view.getHeight();
+                if (measuredHeight <= scrollY + height) {
+                    ll_load.setVisibility(View.VISIBLE);
+                    viewHandler.sendEmptyMessageDelayed(1,2000);
+                }
+                break;
+            }
+            default:
+                break;
+        }
+
+        return false;
+    }
+
+    @Override
+    public void update(Observable observable, Object o) {
+        mLoginState = (Boolean)o;
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mySynthesizer!=null){
+            mySynthesizer.destroy();
+        }
+
+    }
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\share.xml",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\share.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\share.xml",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\share.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\encode.xml",
+        "source": "C:\\androidProject\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\encode.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\encode.xml",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\encode.xml"
+    },
+    {
+        "merged": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\share.xml",
+        "source": "C:\\androidProject\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\share.xml"
+    },
+    {
+        "merged": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\encode.xml",
+        "source": "C:\\Desktop\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\encode.xml"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\share.xml",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\share.xml"
+    },
+    {
+        "merged": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-land\\encode.xml",
+        "source": "C:\\android\\FigureInformation\\zxing\\build\\intermediates\\bundles\\debug\\res\\layout-land\\encode.xml"
+    }
+]
